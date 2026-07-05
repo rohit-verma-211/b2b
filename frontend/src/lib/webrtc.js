@@ -3,7 +3,18 @@ import { sha256 } from "./hash";
 import { encryptChunk, decryptChunk } from "./crypto";
 import { ChunkStore } from "./storage";
 
-const ICE_SERVERS = [{ urls: "stun:stun.l.google.com:19302" }];
+const ICE_SERVERS = [
+  { urls: "stun:stun.l.google.com:19302" },
+  {
+    urls: [
+      "turn:openrelay.metered.ca:80",
+      "turn:openrelay.metered.ca:443",
+      "turn:openrelay.metered.ca:443?transport=tcp",
+    ],
+    username: "openrelayproject",
+    credential: "openrelayproject",
+  },
+];
 // No TURN server is configured — this is a direct-P2P demo. Peers behind a
 // symmetric NAT / restrictive firewall may fail to connect; see README.
 

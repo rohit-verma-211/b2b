@@ -1,0 +1,16 @@
+{
+  "name": "mars-p2p-signal",
+  "version": "1.0.0",
+  "description": "Lightweight signaling server for browser-to-browser WebRTC file transfer",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}

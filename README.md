@@ -1,4 +1,4 @@
-# P2P Web Share
+# B2B Transfer : Browser to Browser File Transfer
 
 Drop a file, get a link. Whoever opens it pulls the file straight from your
 browser over a WebRTC data channel — no upload, no storage, no size cap
